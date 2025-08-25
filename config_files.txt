@@ -1,0 +1,96 @@
+# =============================================================================
+# ARQUIVO: .env
+# Crie este arquivo na mesma pasta do script principal
+# =============================================================================
+
+# Sua chave da API do Google Gemini
+GOOGLE_API_KEY=AIzaSyD...sua_chave_completa_aqui
+
+# Exemplo de outras configurações que você pode adicionar
+# MODEL_ID=gemini-2.0-flash
+# DEBUG=false
+# APP_NAME=Sistema de Agentes IA
+
+# =============================================================================
+# ARQUIVO: requirements.txt  
+# Para instalar todas as dependências: pip install -r requirements.txt
+# =============================================================================
+
+streamlit>=1.28.0
+google-genai>=0.1.0
+google-adk>=0.1.0
+python-dotenv>=1.0.0
+asyncio
+
+# =============================================================================
+# Instalação sem usar requirements.txt
+# pip install streamlit google-genai google-adk python-dotenv
+# =============================================================================
+
+
+# =============================================================================
+# ARQUIVO: .env.example (exemplo para outros desenvolvedores)
+# =============================================================================
+
+# Copie este arquivo para .env e preencha com suas chaves reais
+GOOGLE_API_KEY=your_google_api_key_here
+
+# =============================================================================
+# ARQUIVO: .gitignore (para não versionar as chaves)
+# =============================================================================
+
+# Environment variables
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Streamlit
+.streamlit/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# =============================================================================
+# INSTRUÇÕES DE CONFIGURAÇÃO
+# =============================================================================
+
+COMO CONFIGURAR O ARQUIVO .env:
+
+1. Obtenha sua API Key:
+   - Acesse: https://makersuite.google.com/app/apikey
+   - Faça login com sua conta Google
+   - Crie uma nova API key
+   - Copie a chave gerada
+
+2. Crie o arquivo .env:
+   - Na mesma pasta do script principal
+   - Nome exato: .env (sem extensão)
+   - Cole sua API key no formato: GOOGLE_API_KEY=sua_chave_aqui
+
+3. Estrutura final dos arquivos:
+   projeto/
+   ├── app.py              # Script principal do Streamlit
+   ├── .env                # Suas chaves (NÃO versionar)
+   ├── .env.example        # Exemplo para outros devs
+   ├── requirements.txt    # Dependências
+   ├── .gitignore         # Arquivos a ignorar no Git
+   └── README.md          # Documentação
+
+4. Execute:
+   pip install -r requirements.txt
+   streamlit run app.py
+
+SEGURANÇA:
+- Nunca commite o arquivo .env no Git
+- Use sempre .env.example como template
+- Mantenha suas chaves privadas
+- Considere usar variáveis de ambiente em produção
