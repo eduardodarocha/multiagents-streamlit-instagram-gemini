@@ -4,10 +4,10 @@ Este projeto é um sistema de agentes de IA que cria posts para o Instagram. A i
 
 ## Tecnologias Utilizadas
 
-*   **Linguagem:** Python 3
-*   **Framework da Interface:** Streamlit
-*   **IA Generativa:** Google Gemini
-*   **Gerenciador de Pacotes:** uv
+- **Linguagem:** Python 3
+- **Framework da Interface:** Streamlit
+- **IA Generativa:** Google Gemini
+- **Gerenciador de Pacotes:** uv
 
 ## Como Usar
 
@@ -16,10 +16,8 @@ Este projeto é um sistema de agentes de IA que cria posts para o Instagram. A i
 Para baixar o repositório, use o seguinte comando:
 
 ```bash
-git clone <URL_DO_REPOSITORIO>
+git clone https://github.com/eduardodarocha/multiagents-streamlit-instagram-gemini.git
 ```
-
-Substitua `<URL_DO_REPOSITORIO>` pela URL do repositório Git.
 
 ### 2. Inicializar o Ambiente Virtual
 
